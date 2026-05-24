@@ -1,4 +1,4 @@
-# ⚡ Embedding Pipeline
+#  Embedding Pipeline
 
 A production-grade data pipeline that reads CSV files, cleans the data, chunks it into batches, and sends it to the OpenAI Embeddings API — with progress bars, error recovery, resume-from-checkpoint, and async batching.
 
@@ -141,7 +141,7 @@ Records are serialized to text (`column: value | column: value ...`), split into
 
 ```
 ╭─────────────────────────────╮
-│    ⚡ EMBEDDING PIPELINE    │
+│     EMBEDDING PIPELINE    │
 ╰─ model: text-embedding-3-small ─╯
   Data dir:   data
   Output  :   output
@@ -204,7 +204,7 @@ python pipeline.py
 You will see:
 
 ```
-⚡ Resuming 'products.csv': 3/5 batches already completed
+ Resuming 'products.csv': 3/5 batches already completed
 ```
 
 Completed batches are skipped automatically. Checkpoint files are stored in `checkpoints/` and are cleared automatically after a fully successful run.
